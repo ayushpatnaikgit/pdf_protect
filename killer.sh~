@@ -1,0 +1,3 @@
+convert file.pdf -quality 100 output.jpg
+
+convert *.jpg output.pdf

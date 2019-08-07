@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>PDF protector</title>
+  <link rel="stylesheet" href="{{ url_for('static',     filename='style.css') }}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>Upload PDF</h1>
+<h2>Converted PDF wouldn't have it's text recognizable.</h2>
+
+<form action="/transform" method="post" enctype="multipart/form-data">
+  <div class="input-file-container">  
+    <input class="input-file" id="my-file" type="file" name="data_file" onchange="form.submit()">
+    <label tabindex="0" for="my-file" class="input-file-trigger">Select a file...</label>
+    
+    
+  </div>
+  <!-- <p class="file-return"></p> -->
+  <!-- <input type="submit"> <i class="input-file"></i> </input  > -->
+  <!-- <input type="submit"/> -->
+</form>  
+
+<!-- partial -->
+  <script type = "text/javascript" 
+         src = "{{ url_for('static', filename = 'script.js') }}" ></script>
+
+</body>
+</html>
