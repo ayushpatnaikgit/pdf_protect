@@ -9,24 +9,23 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=80)
+if __name__ == '__main__':
+ app.run(host="0.0.0.0", port=80)
 
 @app.route('/transform', methods=['GET',"POST"])
 def transform_view():
+    os.system("touch helo")
     request_file = request.files['data_file']
 
     if not request_file:
         return "No file"
 
-    request_file.save('file.pdf')
+    #request_file.save('file.pdf')
+    # os.system('bash killer.sh')
+    data = open('file.pdf', 'rb')
 
-    os.system('bash killer.sh')
-    data = open('output.pdf', 'rb')
-
-    os.system('rm *.png')
-    os.system('rm *.pdf')
+    # os.system('rm *.png')
+    # os.system('rm *.pdf')
 
     data.seek(0)
 
@@ -35,4 +34,4 @@ def transform_view():
         mimetype='application/pdf',
         as_attachment=True,
         attachment_filename='protected.pdf'
-    )
+    )	
