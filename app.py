@@ -18,11 +18,11 @@ def transform_view():
         return "No file"
 
     request_file.save('file.pdf')
-    os.system('bash killer.sh')
-    data = open('output.pdf', 'rb')
+    # os.system('bash killer.sh')
+    data = open('file.pdf', 'rb')
 
-    os.system('rm *.png')
-    os.system('rm *.pdf')
+    # os.system('rm *.png')
+    # os.system('rm *.pdf')
 
     data.seek(0)
 
