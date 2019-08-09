@@ -1,4 +1,4 @@
-from flask import Flask, make_response, request , jsonify, render_template      
+from flask import Flask, make_response, request, redirect , jsonify, render_template      
 import os, json 
 import flask as fl
 import sys, zipfile, io , pathlib
@@ -9,12 +9,9 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
-if __name__ == '__main__':
- app.run(host="0.0.0.0", port=80)
 
-@app.route('/transform', methods=['GET',"POST"])
+@app.route('/', methods=["POST"])
 def transform_view():
-    os.system("touch helo")
     request_file = request.files['data_file']
 
     if not request_file:
@@ -34,4 +31,8 @@ def transform_view():
         mimetype='application/pdf',
         as_attachment=True,
         attachment_filename='protected.pdf'
-    )	
+    ) 
+ 
+
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", port=80)
