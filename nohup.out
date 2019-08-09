@@ -1,0 +1,25 @@
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+202.70.131.5 - - [09/Aug/2019 11:10:10] "GET / HTTP/1.1" 200 -
+202.70.131.5 - - [09/Aug/2019 11:12:15] "GET / HTTP/1.1" 200 -
+173.252.127.11 - - [09/Aug/2019 11:12:48] "GET /?fbclid=IwAR2et4Nji7wabeWyhszcLfZD_tNWX4pXYz0d6v7Km9vrzdpSBoawvLOEK_g HTTP/1.1" 200 -
+173.252.127.23 - - [09/Aug/2019 11:12:48] "GET /static/style.css HTTP/1.1" 200 -
+173.252.127.14 - - [09/Aug/2019 11:12:49] "GET /static/script.js HTTP/1.1" 200 -
+202.70.131.5 - - [09/Aug/2019 11:12:58] "GET / HTTP/1.1" 200 -
+202.70.131.5 - - [09/Aug/2019 11:14:45] "GET / HTTP/1.1" 200 -
+42.106.21.146 - - [09/Aug/2019 11:25:02] "GET / HTTP/1.1" 200 -
+42.106.21.146 - - [09/Aug/2019 11:25:03] "GET /static/style.css HTTP/1.1" 200 -
+42.106.21.146 - - [09/Aug/2019 11:25:03] "GET /static/script.js HTTP/1.1" 200 -
+66.102.8.198 - - [09/Aug/2019 11:25:12] "GET / HTTP/1.1" 200 -
+66.102.8.198 - - [09/Aug/2019 11:25:12] "GET /static/style.css HTTP/1.1" 200 -
+66.102.8.196 - - [09/Aug/2019 11:25:12] "GET /static/script.js HTTP/1.1" 200 -
